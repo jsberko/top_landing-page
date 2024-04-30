@@ -3,7 +3,7 @@
     padding: 0;
     font-family: roboto, sans-serif;
     box-sizing: border-box;
-
+    /* border: red 2px solid; */
 }
 
 .secondary-text {
@@ -12,8 +12,9 @@
 }
 
 .header-container {
-    padding: 0px 240px;
     background-color: #1F2937;
+    width: 100%;
+    padding: 0px 240px;
 }
 
 .header-container .header {
@@ -50,29 +51,27 @@
 
 .hero-container {
     display: flex;
+    justify-content: center;
     padding: 160px 0px;
     gap: 48px;
+    background-color: #1F2937;
+    width: 100%;
 }
 
-.hero-container .hero-text {
+.hero-text {
     width: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.hero-container h1 {
+.hero-text h1 {
     color: #F9FaF8;
     font-size: 48px;
     font-weight: extra-bold;
 }
 
-.hero-container .hero-image {
-    display: flex;
-    width: 550px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.hero-text p {
+    margin: 24px 0px;
 }
 
 .hero-container button {
@@ -90,6 +89,18 @@
     border: 3px white solid;
 }
 
+.hero-image {
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
 
 .body-container-1 {
     padding: 0px 360px;
@@ -104,11 +115,32 @@
     padding: 48px 0px;
 }
 
-.body-container-1 .cards-container {
+.cards-container {
     display: flex;
-    gap: 48px;
     justify-content: center;
+    gap: 48px;
     padding-bottom: 120px;
+}
+
+.cards-container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.card .card-text {
+    text-align: center;
+}
+
+/* .card-1,
+.card-2,
+.card-3,
+.card-4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
 }
 
 .body-container-1 .card-image {
@@ -121,14 +153,14 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
+} */
 
-.card-1-image,
+/* .card-1-image,
 .card-2-image,
 .card-3-image,
 .card-4-image {
     width: 160px;
-}
+} */
 
 .body-container-1 p {
     text-align: center;
@@ -164,6 +196,7 @@
     text-align: right;
     padding-right: 24px;
 }
+
 
 .body-container-3 {
     display: flex;
