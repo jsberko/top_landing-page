@@ -3,7 +3,6 @@
     padding: 0;
     font-family: roboto, sans-serif;
     box-sizing: border-box;
-    /* border: red 2px solid; */
 }
 
 .secondary-text {
@@ -58,8 +57,10 @@
     width: 100%;
 }
 
+
 .hero-text {
-    width: 450px;
+
+    width: 45%;
     display: flex;
     flex-direction: column;
 }
@@ -105,71 +106,52 @@
 .body-container-1 {
     padding: 0px 360px;
     background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .body-container-1 h2 {
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
-    text-align: center;
     padding: 48px 0px;
 }
 
 .cards-container {
     display: flex;
-    justify-content: center;
-    gap: 48px;
+    justify-content: space-between;
+    gap: 2em;
     padding-bottom: 120px;
+    width: 100%;
 }
 
 .cards-container .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;
-}
-
-.card .card-text {
-    text-align: center;
-}
-
-/* .card-1,
-.card-2,
-.card-3,
-.card-4 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 25%;
 }
 
-.body-container-1 .card-image {
-    width: 160px;
-    height: 160px;
-    border: 4px solid #3882f6;
-    border-radius: 16px;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-} */
-
-/* .card-1-image,
-.card-2-image,
-.card-3-image,
-.card-4-image {
-    width: 160px;
-} */
-
-.body-container-1 p {
+.card .card-text {
     text-align: center;
     color: rgb(124, 129, 138);
     padding: 2px;
 }
 
+.cards-container img {
+    width: 1 em;
+    border: 4px solid #3882f6;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
 
 .body-container-2 {
+    padding: 0px 360px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +159,7 @@
 }
 
 .body-container-2 .quote-container {
-    width: 790px;
+    width: 100%;
     padding: 160px 0px;
 }
 
@@ -199,6 +181,8 @@
 
 
 .body-container-3 {
+    padding: 0px 200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +191,7 @@
 
 .body-container-3 .cta-container {
     background-color: #3882F6;
-    width: 1000px;
+    width: 100%;
     border-radius: 8px;
     margin: 100px 0px;
 }
@@ -215,6 +199,7 @@
 .body-container-3 .cta-content {
     display: flex;
     justify-content: center;
+    gap: 10em;
     align-items: center;
     padding: 48px 120px;
     color: white;
